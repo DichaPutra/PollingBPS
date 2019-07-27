@@ -1,0 +1,80 @@
+#contenitore{
+position: relative;
+width: 100%;
+margin: 20px auto;
+text-align:center;
+overflow:hidden;
+font: 14px 'Trebuchet MS', sans serif;
+}
+.left{
+float:left;
+width:100%;
+}
+#grafico{
+position:relative;
+height:300px;
+border-left:2px solid #fff;
+border-bottom: 2px solid #fff;
+width:100%;
+margin-top:20px;
+}
+.riga{
+position:absolute;
+left:0;
+height: 1px;
+background-color:#fff;
+width: 100%;
+}
+.riga div{
+float:left;
+margin: -8px 0 0 -40px;
+}
+.canc{
+clear:both;
+}
+table{
+width:60%;
+background-color: white;
+color: #000;
+margin: 1em auto;
+}
+table caption{
+background-color: #D8EED8;
+color: #004156;
+text-align: left;
+}
+table tr:nth-child(2n){
+background-color: #D8EED8;
+}
+table tr:nth-child(2n+1){
+background-color: #BFDFFF;
+}
+table td{
+text-align:center;
+border-bottom: 1px solid #CDCDCD;
+padding: 6px;
+}
+.column{
+position:absolute;
+width: 20%;
+bottom: 0;
+background-color: #003366;
+margin-left:5%;
+font-size: 30px;
+color: #fff;
+}
+div.button {
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    background-color:#003366;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    padding: 8px;
+    color: #E1E2CF;
+    cursor: pointer;
+}
+.column div{
+margin-top:10px;
+height:20px;
+}

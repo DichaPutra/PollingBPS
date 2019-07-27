@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.slide {
+	position: relative;
+	padding: 25vh 10%;
+	min-height: 90vh;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 10px -1px 0 rgba(.7, 0, 0, 0);
+	transform-style: inherit;
+}
+.slide:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+.title {
+	width: 50%;
+	padding: 5%;
+	border-radius: 5px;
+	background: rgba(240, 230, 220, .7);
+	box-shadow: 8 0 0px rgba(0, 0, 0, .7);
+}
+ .slide:nth-child(2n) .title {
+ margin-left: 0;
+ margin-right: auto;
+}
+ .slide:nth-child(2n+1) .title {
+ margin-left: auto;
+ margin-right: 0;
+}
+.slide, .slide:before {
+	background: 50% 50% / cover;
+}
+.header {
+	text-align: center;
+	font-size: 175%;
+	color: #fff;
+	text-shadow: 0 2px 2px #000;
+}
+#title {
+	background-image:url('../image/banner.jpg');
+	background-attachment: fixed;
+}
+#slide1:before {
+	background-image:url('../image/banner2.jpg');
+	transform: translateZ(-1px) scale(1);
+	z-index:-1;
+}
+#slide2 {
+	background-image: url('../image/footer-banner.jpg');
+	background-attachment: fixed;
+}
+#slide5 {
+	background-image:url('../image/signup.jpg');
+	background-attachment: fixed;
+}
+#slide6 {
+	background-image:url('../image/banner2.jpg');
+	background-attachment: fixed;
+}
+
+#footer {
+	display: none;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: -100px;
+	height: 100px;
+	width: 100%;
+	background-color: rgba(5, 5, 5, 0.7);
+	color: #fff;
+	text-align: center;
+	padding:15px;
+}
+#footer p {
+	padding: 15px;
+}
